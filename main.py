@@ -16,6 +16,15 @@ while True:
     grade_stu = pd.read_csv("grades.csv")
     print("Grade average: ")
     print(grade_stu["Grade"].mean())
+    if grade_stu =< 70:
+        print ("Student with bad grades")
+    elif grade_stu =< 80: 
+        print ("Regular student")
+    elif grade_stu =< 90:
+        print ("Student with good grades")
+    elif grade_stu => 95:
+        print ("Excelent student")
+
 
     # Area of interest selection
     interest_list = ["Negocios", "Salud", "Estudios Creativos", "Ambiente Construido", "Derecho, Economia y Relaciones Internacionales", "Innovacion y Transformacion", "Computacion y Tecnologias de Informacion", "Bioingenieria y Procesos Quimicos", "Ciencias Aplicadas"]
