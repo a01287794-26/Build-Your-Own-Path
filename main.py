@@ -14,17 +14,16 @@ while True:
     if highschool == "yes":
         semester = input( "What semester are you in? (e.g., 1st, 2nd, 3rd, etc.): ")
     grade_stu = pd.read_csv("grades.csv")
-    print("Grade average: ")
-    print(grade_stu["Grade"].mean())
-    if grade_stu =< 70:
+    avg_grade = (grade_stu["Grade"].mean())
+    print("Grade average: ", avg_grade)
+    if avg_grade < 70: 
         print ("Student with bad grades")
-    elif grade_stu =< 80: 
+    elif avg_grade <= 80: 
         print ("Regular student")
-    elif grade_stu =< 90:
+    elif avg_grade <= 90:
         print ("Student with good grades")
-    elif grade_stu => 95:
+    elif avg_grade <= 95:
         print ("Excelent student")
-
 
     # Area of interest selection
     interest_list = ["Negocios", "Salud", "Estudios Creativos", "Ambiente Construido", "Derecho, Economia y Relaciones Internacionales", "Innovacion y Transformacion", "Computacion y Tecnologias de Informacion", "Bioingenieria y Procesos Quimicos", "Ciencias Aplicadas"]
