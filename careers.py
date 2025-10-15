@@ -1,11 +1,3 @@
-# Exchange program preference
-print("\n\033[1;37mWould you like exchange programs to be featured on your main page? (yes/no):\033[0m ")
-exchange_preference = input().strip().lower()
-if exchange_preference in ("yes", "y"):
-    exchange_preference = "yes"
-else:
-    exchange_preference = "no"
-
 # Careers by interest
 career_by_area = {
     "Negocios": ["Licenciatura en Contaduria Publica y Finanzas", "Licenciatura en Desarrollo de Talento y Cultura Organizacional", "Licenciatura en Emprendimiento", "Licenciatura en Estrategia y Transformacion de Negocios", "Licenciatura en Inteligencia de Negocios", "Licenciatura en Mercadoctenia", "Licenciatura en Negocios Internacionales"],
