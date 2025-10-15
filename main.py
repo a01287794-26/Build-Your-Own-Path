@@ -18,11 +18,11 @@ while True:
     print("Grade average: ", avg_grade)
     if avg_grade < 70: 
         print ("Student with bad grades")
-    elif avg_grade <= 80: 
+    elif avg_grade >= 70 and avg_grade <= 80: 
         print ("Regular student")
-    elif avg_grade <= 90:
+    elif avg_grade > 80 and avg_grade <= 90:
         print ("Student with good grades")
-    elif avg_grade <= 95:
+    elif avg_grade > 90 and avg_grade <= 100:
         print ("Excelent student")
 
     # Area of interest selection
