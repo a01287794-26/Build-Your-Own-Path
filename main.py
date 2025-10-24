@@ -1,3 +1,6 @@
+import pandas as pd
+from datetime import datetime
+
 print("\033[1;33mWelcome to BUILD YOUR OWN PATH! \nLet's start by creating your profile.\n\033[0m")
 
 # Building user profile
