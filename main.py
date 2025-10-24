@@ -5,8 +5,32 @@ print("\033[1;33mWelcome to BUILD YOUR OWN PATH! \nLet's start by creating your 
 
 # Building user profile
 while True:
-    name = input("\033[1;37mEnter your name:\033[0m ")
-    birthday = input("\033[1;37mEnter your birthday (DD-MM-YYYY): \033[0m")
+    # Validate name: must not be empty, must not contain digits, and must not be a single letter
+    while True:
+        name = input("\033[1;37mEnter your name:\033[0m ").strip()
+        if not name:
+            print("\033[1;31mName cannot be empty. Please enter your name.\033[0m")
+            continue
+        if any(char.isdigit() for char in name):
+            print("\033[1;31mName cannot contain numbers. Please enter a valid name.\033[0m")
+            continue
+        # Require at least two alphabetic characters (prevents single-letter names like "A")
+        if sum(1 for ch in name if ch.isalpha()) < 2:
+            print("\033[1;31mName must contain at least two letters. Please enter your full name.\033[0m")
+            continue
+        break
+   # Validate birthday: must match DD-MM-YYYY and be a real date (no future dates)
+    while True:
+        birthday_input = input("\033[1;37mEnter your birthday (DD-MM-YYYY): \033[0m").strip()
+        try:
+            birthday_dt = datetime.strptime(birthday_input, "%d-%m-%Y")
+            if birthday_dt > datetime.now():
+                print("\033[1;31mBirthday cannot be in the future. Please enter a valid date.\033[0m")
+                continue
+            birthday = birthday_input
+            break
+        except ValueError:
+            print("\033[1;31mInvalid date or format. Use DD-MM-YYYY (e.g., 31-12-2000).\033[0m")
     location = input("\033[1;37mEnter your location: \033[0m")
     highschool = input("\033[1;37mAre you in high school? (yes/no): \033[0m").strip().lower()
     if highschool in ("yes", "y"):
