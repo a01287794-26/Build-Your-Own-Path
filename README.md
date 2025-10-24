@@ -4,3 +4,13 @@ This app offers an opportunity for students to create their profile and search f
 The order of files for the app to work are: 
 1. main.py
 2. careers.py
+
+# Reflection: 
+We have made a lot of progress for this phase, but some aspects still need to be improved, as we struggled a little with the pandas. Overall, we are happy with how the project is looking.
+
+Link for video: https://drive.google.com/file/d/1Zcl9yV7wuG30pvanUF8yvZPzuIOrSNPL/view?usp=sharing
+
+# For Windows users:
+pip install pandas
+# For Mac users:
+python3 -m pip install pandas
