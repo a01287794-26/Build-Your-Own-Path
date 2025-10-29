@@ -11,6 +11,6 @@ We have made a lot of progress for this phase, but some aspects still need to be
 Link for video: https://drive.google.com/file/d/1Zcl9yV7wuG30pvanUF8yvZPzuIOrSNPL/view?usp=sharing
 
 **For Windows users:**
-pip install pandas
+pip install pandas \n
 **For Mac users:**
 python3 -m pip install pandas
