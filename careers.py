@@ -23,7 +23,7 @@ for interest in selected_interest:
         print(f"\n{interest}: No careers found for this area.") 
 
 # Display all careers with numbered list and allow selection to view details.
-print("\n\033[1;33mAll available careers at Tecnologico de Monterrey:\033[0m")
+print("\n\033[1;33mAll available careers at Tecnologico de Monterrey:\033[1;37m")
 
 # Build flattened list preserving order
 all_careers = []
