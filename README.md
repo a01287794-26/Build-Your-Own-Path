@@ -15,10 +15,10 @@ Link for video: https://drive.google.com/file/d/1Zcl9yV7wuG30pvanUF8yvZPzuIOrSNP
 
 It will be required for you to install pandas library to get the program running. There are two ways of installing it; enter the terminal and write:
 
-**For Windows users:**
+ **For Windows users:**
 pip install pandas
 
-**For Mac users:**
+ **For Mac users:**
 python3 -m pip install pandas
 
 It is recommended that you create an excel spreadsheet with your most recent grades, going by this template:
