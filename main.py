@@ -1,5 +1,8 @@
 import pandas as pd
+import csv
 from datetime import datetime
+from pathlib import Path
+import os
 
 print("\033[1;33mWelcome to BUILD YOUR OWN PATH! \nLet's start by creating your profile.\n\033[0m")
 
