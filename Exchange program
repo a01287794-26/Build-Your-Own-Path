@@ -1,7 +1,0 @@
-# Exchange program preference
-print("\n\033[1;37mWould you like exchange programs to be featured on your main page? (yes/no):\033[0m ")
-exchange_preference = input().strip().lower()
-if exchange_preference in ("yes", "y"):
-    exchange_preference = "yes"
-else:
-    exchange_preference = "no"
