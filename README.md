@@ -10,6 +10,7 @@ We have made a lot of progress for this phase, but some aspects still need to be
 
 Link for video: https://drive.google.com/file/d/1Zcl9yV7wuG30pvanUF8yvZPzuIOrSNPL/view?usp=sharing
 
+# Specifications: 
 **For Windows users:**
 pip install pandas
 
