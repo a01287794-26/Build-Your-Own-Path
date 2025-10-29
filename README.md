@@ -14,10 +14,8 @@ Link for video: https://drive.google.com/file/d/1Zcl9yV7wuG30pvanUF8yvZPzuIOrSNP
 ⚠️**IMPORTANT:** You **MUST** download this excel file called "careers" in order to have the careers be displayed. The file **MUST** stay as an csv. and **MUST** be inside the second folder in the case that _**Visual Studio 2022**_ is being used. You can download the file from this link: https://drive.google.com/file/d/1Y1qHSdZCh6n3Xym6xWg3o1EpTZc5ACDH/view?usp=sharing 
 
 It will be required for you to install pandas library to get the program running. There are two ways of installing it; enter the terminal and write:
-
 **For Windows users:**
 pip install pandas
-
 **For Mac users:**
 python3 -m pip install pandas
 
