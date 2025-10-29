@@ -16,3 +16,6 @@ pip install pandas
 
 **For Mac users:**
 python3 -m pip install pandas
+
+It is recommended that you create an excel spreadsheet with your most recent grades, going by this template:
+"C:\Users\renit\Documents\Renata\5to semestre\Programacion\Project Demo\Project Demo\grades.csv" 
