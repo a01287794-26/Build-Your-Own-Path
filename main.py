@@ -61,6 +61,7 @@ while True:
     for idx, interest in enumerate(interest_list, 1):
         print(f"{idx}. {interest}")
 
+    while True:
     interest_input = input("Enter the numbers corresponding to your interests (e.g., 1,3): ")
     selected_interest = []
     for num in interest_input.split(","):
@@ -69,6 +70,10 @@ while True:
             idx = int(num) - 1
             if 0 <= idx < len(interest_list):
                 selected_interest.append(interest_list[idx])
+    if selected_interest:
+        break
+    print("\033[1;31mInvalid input. Please enter valid numbers.\033[0m")
+    
     # Display user profile
     print("\n\033[1;33mUser Profile:\033[0m")
     print(f"Name: {name}")
