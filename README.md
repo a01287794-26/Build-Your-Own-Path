@@ -11,6 +11,8 @@ We have made a lot of progress for this phase, but some aspects still need to be
 Link for video: https://drive.google.com/file/d/1Zcl9yV7wuG30pvanUF8yvZPzuIOrSNPL/view?usp=sharing
 
 # Specifications: 
+It will be required for you to install pandas library to get the program running. There are two ways of installing it; enter the terminal and write:
+
 **For Windows users:**
 pip install pandas
 
@@ -19,5 +21,6 @@ python3 -m pip install pandas
 
 It is recommended that you create an excel spreadsheet with your most recent grades, going by this template:
 https://drive.google.com/file/d/1Q-ii-uu38BhyUlMRcPz28bGJJI7rhKTZ/view?usp=sharing 
+
 ⚠️**IMPORTANT:** once you create your excel spreadsheet, you must save the file as a _.csv_.
 
