@@ -20,7 +20,8 @@ pip install pandas
 python3 -m pip install pandas
 
 It is recommended that you create an excel spreadsheet with your most recent grades, going by this template:
-https://drive.google.com/file/d/1Q-ii-uu38BhyUlMRcPz28bGJJI7rhKTZ/view?usp=sharing 
+https://drive.google.com/file/d/1Q-ii-uu38BhyUlMRcPz28bGJJI7rhKTZ/view?usp=sharing .
+You can also decide to download the excel .csv and rewrite it using your own information.
 
 ⚠️**IMPORTANT:** once you create your excel spreadsheet, you must save the file as a _.csv_.
 
