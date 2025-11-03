@@ -4,7 +4,49 @@ from datetime import datetime
 from pathlib import Path
 import os
 
+# Insert this function after the imports (near the top of the file)
+
+def collect_grades():
+    """
+    Interactively collect subject-grade pairs from the user,
+    return a pandas DataFrame with columns ['Subject', 'Grade'].
+    """
+    rows = []
+    print("\nWrite the subjects you course and the grades of each one. Leave the input(subject) empty to finish editing.")
+    while True:
+        subject = input("Subject: ").strip()
+        if not subject:
+            break
+        grade_str = input(f"Grade for '{subject}' (0-100): ").strip()
+        try:
+            grade = float(grade_str)
+            if grade < 0 or grade > 100:
+                print("The grade must be between 0 and 100. Please try again.")
+                continue
+        except ValueError:
+            print("Invalid input. Please enter a number (e.g., 88 or 95.5).")
+            continue
+        rows.append({"Subject": subject, "Grade": grade})
+
+    if not rows:
+        print("No grades were entered.")
+        return pd.DataFrame(columns=["Subject", "Grade"])
+
+    df = pd.DataFrame(rows, columns=["Subject", "Grade"])
+    print("\nGrade Table:")
+    print(df.to_string(index=False))
+    avg = df["Grade"].mean()
+    print(f"Average: {avg:.2f}")
+
+    save = input("Do you want to save this table to 'grades.csv'? (y/n): ").strip().lower()
+    if save in ("y", "yes"):
+        df.to_csv("grades.csv", index=False)
+        print("Saved to 'grades.csv'.")
+
+    return df
+
 print("\033[1;33mWelcome to BUILD YOUR OWN PATH! \nLet's start by creating your profile.\n\033[0m")
+
 
 # Building user profile
 while True:
@@ -30,12 +72,16 @@ while True:
             if birthday_dt > datetime.now():
                 print("\033[1;31mBirthday cannot be in the future. Please enter a valid date.\033[0m")
                 continue
+            elif datetime.now().year - birthday_dt.year > 70:
+                print("\033[1;31mPlease enter a valid date.\033[0m")
+                continue
             birthday = birthday_input
             break
         except ValueError:
             print("\033[1;31mInvalid date or format. Use DD-MM-YYYY (e.g., 31-12-2000).\033[0m")
     location = input("\033[1;37mEnter your location: \033[0m")
     highschool = input("\033[1;37mAre you in high school? (yes/no): \033[0m").strip().lower()
+    # This will improve recommendations for the user depending on wether they are in high school or not
     if highschool in ("yes", "y"):
         highschool = "yes"
     else:
@@ -43,17 +89,18 @@ while True:
 
     if highschool == "yes":
         semester = input( "What semester are you in? (e.g., 1st, 2nd, 3rd, etc.): ")
-    grade_stu = pd.read_csv("grades.csv")
-    avg_grade = (grade_stu["Grade"].mean())
-    print("Grade average: ", avg_grade)
-    if avg_grade < 70: 
-        print ("Student with bad grades, must present PAA") 
-    elif avg_grade >= 70 and avg_grade <= 80: 
-        print ("Regular student, can request Alizanza azul scholarship presenting PAA")
-    elif avg_grade > 80 and avg_grade <= 90:
-        print ("Student with good grades, can request Aliazan azul scholarship presenting PAA")
-    elif avg_grade > 90 and avg_grade <= 100:
-        print ("Excelent student, can request Excelencia academica and Aliza azul scholarships")
+        # Grade average calculation for feedback on academic performance
+        grade_stu = collect_grades()
+        avg_grade = grade_stu["Grade"].mean() if not grade_stu.empty else 0.0
+        print("Grade average: ", avg_grade)
+        if avg_grade < 70: 
+            print ("Student with bad grades, must present PAA") 
+        elif avg_grade >= 70 and avg_grade <= 80: 
+            print ("Regular student, can request Alizanza azul scholarship presenting PAA")
+        elif avg_grade > 80 and avg_grade <= 90:
+            print ("Student with good grades, can request Aliazan azul scholarship presenting PAA")
+        elif avg_grade > 90 and avg_grade <= 100:
+            print ("Excelent student, can request Excelencia academica and Aliza azul scholarships")
 
     # Area of interest selection
     interest_list = ["Negocios", "Salud", "Estudios Creativos", "Ambiente Construido", "Derecho, Economia y Relaciones Internacionales", "Innovacion y Transformacion", "Computacion y Tecnologias de Informacion", "Bioingenieria y Procesos Quimicos", "Ciencias Aplicadas"]
