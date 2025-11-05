@@ -21,8 +21,8 @@ pip install pandas
  **For Mac users:**
 python3 -m pip install pandas
 
-**_It is recommended to have your most recent grades in hand. For example, if you are in 3rd semester of highschool, it's recommended you have your 2nd semester grades in hand.
-_**
+_It is recommended to have your most recent grades in hand. For example, if you are in 3rd semester of highschool, it's recommended you have your 2nd semester grades in hand._
+
 ⚠️**IMPORTANT:** once you create your excel spreadsheet, you must save the file as a _.csv_.
 
 
