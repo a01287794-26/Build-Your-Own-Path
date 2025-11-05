@@ -1,6 +1,7 @@
 # Build-Your-Own-Path
 App for students that are looking for **information of the careers** in different universities. It's made **for all students**, mainly focused in 5th semester students.
 This app offers an opportunity for students to **create their profile** and search for a university including features like students' profile, synthesized information of each career in one university and also recommended careers based in the students profile and their interests, making an efficient and quick app for anyone who needs it. The student will be able to save a file with their grades in the app, so it calculates the average and therefore give feedback on it. 
+
 The order of files for the app to work are: 
 1. main.py
 2. careers.py
