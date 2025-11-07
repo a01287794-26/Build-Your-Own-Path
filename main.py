@@ -72,7 +72,7 @@ username = str(input("Enter your username: "))
 password = str(input("Enter your password: "))  
 
 # Check if username and password exist
-user_data = users[(users["username"] == username) & (users["password"] == password)]
+user_data = users[(users["Username"] == username) & (users["Password"] == password)]
 
 if not user_data.empty:
     print(f"Welcome back, {username}!")
@@ -86,7 +86,7 @@ else:
         new_username = input("Enter a new username: ")
 
         # Make sure the username doesn’t already exist
-        while new_username in users["username"].values:
+        while new_username in users["Username"].values:
             print("That username already exists. Please choose another.")
             new_username = input("Enter a new username: ")
 
