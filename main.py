@@ -103,17 +103,16 @@ while True:
             print ("Excelent student, can request Excelencia academica and Aliza azul scholarships")
 
     def main():
-    print("Here is a guide to study for PAA")
-    choice = input("Do you want the guide link displayed? (yes/no): ").strip().lower()
-    if choice in ("yes", "y"):
-        url = "https://paa.aprendolibre.com/landing"
-        print("Guide URL:", url)
-        print("Copy and paste it into your browser when you're ready.")
-    else:
-        print("No guide will be shown.")
-
-if __name__ == "__main__":
-    main()
+        print("Here is a guide to study for PAA")
+        choice = input("Do you want the guide link displayed? (yes/no): ").strip().lower()
+        if choice in ("yes", "y"):
+            url = "https://paa.aprendolibre.com/landing"
+            print("Guide URL:", url)
+            print("Copy and paste it into your browser when you're ready.")
+        else:
+            print("No guide will be shown.")
+    if __name__ == "__main__":
+        main()
 
     # Area of interest selection
     interest_list = ["Negocios", "Salud", "Estudios Creativos", "Ambiente Construido", "Derecho, Economia y Relaciones Internacionales", "Innovacion y Transformacion", "Computacion y Tecnologias de Informacion", "Bioingenieria y Procesos Quimicos", "Ciencias Aplicadas"]
