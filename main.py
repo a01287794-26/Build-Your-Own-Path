@@ -49,6 +49,72 @@ print("\033[1;33mWelcome to BUILD YOUR OWN PATH! \nLet's start by creating your 
 
 
 # Building user profile
+import os
+import pandas as pd  
+
+# Your original setup
+script_dir = os.path.dirname(__file__) 
+file_path = os.path.join(script_dir, 'users.csv') 
+
+# If the file doesn't exist yet, create it
+if not os.path.exists(file_path):
+    df = pd.DataFrame(columns=["username", "password"])
+    df.to_csv(file_path, index=False)
+
+# Load the CSV file
+users = pd.read_csv(file_path)
+
+# Start message
+start = str(input("Welcome to Build Your Own Path! Log in to Start: ")) 
+
+# Ask for login info
+username = str(input("Enter your username: ")) 
+password = str(input("Enter your password: "))  
+
+# Check if username and password exist
+user_data = users[(users["username"] == username) & (users["password"] == password)]
+
+if not user_data.empty:
+    print(f"Welcome back, {username}!")
+
+else:
+    print("Username or password not found.")
+    choice = input("Would you like to create a new account? (yes/no): ").lower()
+
+    if choice == "yes":
+        # Create new account
+        new_username = input("Enter a new username: ")
+
+        # Make sure the username doesn’t already exist
+        while new_username in users["username"].values:
+            print("That username already exists. Please choose another.")
+            new_username = input("Enter a new username: ")
+
+        new_password = input("Enter a new password: ")
+
+        # Add new user to the dataframe
+        new_user = pd.DataFrame([[new_username, new_password]], columns=["username", "password"])
+        users = pd.concat([users, new_user], ignore_index=True)
+
+        # Save to CSV
+        users.to_csv(file_path, index=False)
+
+        print("You have created your username successfully!\n")
+
+        # Ask them to log in again
+        print("Please log in now.")
+        username = str(input("Enter your username: ")) 
+        password = str(input("Enter your password: "))  
+
+        # Verify again
+        user_data = users[(users["username"] == username) & (users["password"] == password)]
+        if not user_data.empty:
+            print(f"Welcome back, {username}!")
+        else:
+            print("Something went wrong. Try again later.")
+    else:
+        print("Goodbye!")
+        
 while True:
     # Validate name: must not be empty, must not contain digits, and must not be a single letter
     while True:
