@@ -49,6 +49,8 @@ print("\033[1;33mWelcome to BUILD YOUR OWN PATH! \nLet's start by creating your 
 
 
 """ Building user profile """
+import os
+import pandas as pd  
 
 # Your original setup
 script_dir = os.path.dirname(__file__) 
@@ -70,7 +72,7 @@ username = str(input("Enter your username: "))
 password = str(input("Enter your password: "))  
 
 # Check if username and password exist
-user_data = users[(users["Username"] == username) & (users["Password"] == password)]
+user_data = users[(users["username"] == username) & (users["password"] == password)]
 
 if not user_data.empty:
     print(f"Welcome back, {username}!")
@@ -84,7 +86,7 @@ else:
         new_username = input("Enter a new username: ")
 
         # Make sure the username doesn’t already exist
-        while new_username in users["Username"].values:
+        while new_username in users["username"].values:
             print("That username already exists. Please choose another.")
             new_username = input("Enter a new username: ")
 
@@ -112,6 +114,7 @@ else:
             print("Something went wrong. Try again later.")
     else:
         print("Goodbye!")
+
         
 while True:
     # Validate name: must not be empty, must not contain digits, and must not be a single letter
