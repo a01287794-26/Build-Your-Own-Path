@@ -13,6 +13,8 @@ Link for video: **YET TO BE RECORDED**
 
 # Specifications: 
 ⚠️**IMPORTANT:** You **MUST** download this excel file called "careers" in order to have the careers be displayed. The file **MUST** stay as an csv. and **MUST** be inside the second folder in the case that _**Visual Studio 2022**_ is being used. You can download the file from this link: https://drive.google.com/file/d/1Y1qHSdZCh6n3Xym6xWg3o1EpTZc5ACDH/view?usp=sharing 
+You **MUST** download this excel file called "users" to log in. The file **MUST** stay as an csv. and **MUST** be inside the second folder in the case that _**Visual Studio 2022**_ is being used. You can download the file from this link:
+https://tecmx-my.sharepoint.com/:x:/g/personal/a01287783_tec_mx/EXCwNG0-PldHrTtvQAf0SCsBc319hvi9jGCheN7rIM2g_A?e=V5bE7U
 
 It will be **REQUIRED** for you to install pandas library to get the program running. There are two ways of installing it; enter the terminal and write:
 
