@@ -179,7 +179,7 @@ while True:
         main()
 
     # Area of interest selection
-    interest_list = ["Negocios", "Salud", "Estudios Creativos", "Ambiente Construido", "Derecho, Economia y Relaciones Internacionales", "Innovacion y Transformacion", "Computacion y Tecnologias de Informacion", "Bioingenieria y Procesos Quimicos", "Ciencias Aplicadas"]
+    interest_list = ["Business", "Health", "Creative Studies", "Built Environment", "Law, Economics and International Relations", "Innovation and Transformation", "Computing and Information Technologies", "Bioengineering and Chemical Processes", "Applied Sciences"]
     print("\n\033[1;37mSelect your area of interest from the list below (separate multiple choices with commas): \033[0m")
     for idx, interest in enumerate(interest_list, 1):
         print(f"{idx}. {interest}")
