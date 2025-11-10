@@ -48,9 +48,7 @@ def collect_grades():
 print("\033[1;33mWelcome to BUILD YOUR OWN PATH! \nLet's start by creating your profile.\n\033[0m")
 
 
-# Building user profile
-import os
-import pandas as pd  
+""" Building user profile """
 
 # Your original setup
 script_dir = os.path.dirname(__file__) 
