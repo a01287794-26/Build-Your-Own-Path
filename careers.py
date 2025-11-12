@@ -7,8 +7,8 @@ career_by_area = {
     "Law, Economics and International Relations": ["Bachelor of Laws", "Bachelor's Degree in Economics", "Bachelor's Degree in Government and Public Transformation", "Bachelor's Degree in International Relations"],
     "Innovation and Transformation": ["Biomedical Engineering", "Civil Engineering", "Electronics Engineering", "Industrial and Systems Engineering", "Engineering in Innovation and Development", "Mechanical Engineering", "Mechatronics Engineering"],
     "Computing and Information Technologies": ["Robotics and Digital Systems Engineering", "Computer Engineering", "Engineering in Digital Business Transformation"],
-    "Bioengineering and Chemical Processes": ["Food Engineering" , "Agri-food Biosystems Engineering", "Biotechnology Engineering", "Sustainable Development Engineering", "Chemical Engineering"],
-    "Applied Sciences": ["Engineering in Data Science and Mathematics" , "Industrial Physics Engineering", "Nanotechnology Engineering"],
+    "Bioengineering and Chemical Processes": ["Food Engineering", "Agri-food Biosystems Engineering", "Biotechnology Engineering", "Sustainable Development Engineering", "Chemical Engineering"],
+    "Applied Sciences": ["Engineering in Data Science and Mathematics", "Industrial Physics Engineering", "Nanotechnology Engineering"],
 }  
     
 print("\n\033[1;37mUniversity of interest:\033[0m Tecnologico de Monterrey\n\033[1;33mRecommended careers:\033[0m ")
