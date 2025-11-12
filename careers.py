@@ -1,15 +1,15 @@
 # Careers by interest
 career_by_area = {
-    "Negocios": ["Licenciatura en Contaduria Publica y Finanzas", "Licenciatura en Desarrollo de Talento y Cultura Organizacional", "Licenciatura en Emprendimiento", "Licenciatura en Estrategia y Transformacion de Negocios", "Licenciatura en Inteligencia de Negocios", "Licenciatura en Mercadoctenia", "Licenciatura en Negocios Internacionales"],
-    "Salud": ["Licenciatura en Biociencias", "Licenciatura en Nutricion y Bienestar Integral", "Licenciatura en Psicologia Clinica y de la Salud", "Medico Cirujano", "Medico Cirujano Odontologo"],
-    "Estudios Creativos": ["Arquitectura", "Licenciatura en Comunicacion", "Licenciatura en Diseño", "Licenciatura en Letras Hispanicas", "Licenciatura en Tecnologia y Produccion Musical", "Licenciatura en Arte Digital", "Licenciatura en Innovacion Educativa"],
-    "Ambiente Construido": ["Arquitectura", "Ingenieria Civil", "Licenciatura en Urbanismo"],
-    "Derecho, Economia y Relaciones Internacionales": ["Licenciatura en Derecho", "Licenciatura en Economia", "Licenciatura en Gobierno y Transformacion Publica", "Licenciatura en Relaciones Internacionales"],
-    "Innovacion y Transformacion": ["Ingenieria Biomedica", "Ingenieria Civil", "Ingenieria en Electronica", "Ingenieria Industrial y de Sistemas", "Ingenieria en Innovacion y Desarrollo", "Ingenieria Mecanica", "Ingenieria en Mecatronica"],
-    "Computacion y Tecnologias de Informacion": ["Ingenieria en Robotica y Sistemas Digitales", "Ingenieria en Tecnologias Computacionales", "Ingenieria en Transformacion Digital de Negocios"],
-    "Bioingenieria y Procesos Quimicos": ["Ingenieria en Alimentos" , "Ingenieria en Biosistemas Agroalimentarios", "Ingenieria en Biotecnologia", "Ingenieria en Desarrollo Sustentable", "Ingenieria Quimica"],
-    "Ciencias Aplicadas": ["Ingenieria en Ciencia de Datos y Matematicas" , "Ingenieria en Fisica Industrial", "Ingenieria en Nanotecnologia"],
-    }
+  "Business": ["Bachelor's Degree in Public Accounting and Finance", "Bachelor's Degree in Talent Development and Organizational Culture", "Bachelor's Degree in Entrepreneurship", "Bachelor's Degree in Business Strategy and Transformation", "Bachelor's Degree in Business Intelligence", "Bachelor's Degree in Marketing", "Bachelor's Degree in International Business"],
+    "Health": ["Bachelor's Degree in Biosciences", "Bachelor's Degree in Nutrition and Holistic Wellness", "Bachelor's Degree in Clinical and Health Psychology", "Medical Surgeon", "Medical Surgeon Dentist"],
+    "Creative Studies": ["Architecture", "Bachelor's Degree in Communication", "Bachelor of Design", "Bachelor's Degree in Hispanic Literature", "Bachelor's Degree in Music Technology and Production", "Bachelor's Degree in Digital Art", "Bachelor's Degree in Educational Innovation"],
+    "Built Environment": ["Architecture", "Civil Engineering", "Bachelor's Degree in Urban Planning"],
+    "Law, Economics and International Relations": ["Bachelor of Laws", "Bachelor's Degree in Economics", "Bachelor's Degree in Government and Public Transformation", "Bachelor's Degree in International Relations"],
+    "Innovation and Transformation": ["Biomedical Engineering", "Civil Engineering", "Electronics Engineering", "Industrial and Systems Engineering", "Engineering in Innovation and Development", "Mechanical Engineering", "Mechatronics Engineering"],
+    "Computing and Information Technologies": ["Robotics and Digital Systems Engineering", "Computer Engineering", "Engineering in Digital Business Transformation"],
+    "Bioengineering and Chemical Processes": ["Food Engineering" , "Agri-food Biosystems Engineering", "Biotechnology Engineering", "Sustainable Development Engineering", "Chemical Engineering"],
+    "Applied Sciences": ["Engineering in Data Science and Mathematics" , "Industrial Physics Engineering", "Nanotechnology Engineering"],
+}  
     
 print("\n\033[1;37mUniversity of interest:\033[0m Tecnologico de Monterrey\n\033[1;33mRecommended careers:\033[0m ")
 # Career recommendation based on interest
