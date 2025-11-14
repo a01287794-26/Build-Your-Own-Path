@@ -341,7 +341,4 @@ if not profile_exists:
             continue
         else:
             print("\n\033[1;33mProfile created successfully!\033[0m")
-            break 
-
-# If we reached here with profile either loaded from file or created above,
-# selected_interest and other profile variables are available for recommendations.
+            break
