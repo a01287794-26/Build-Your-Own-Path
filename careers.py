@@ -3,7 +3,7 @@ career_by_area = {
   "Business": ["Bachelor's Degree in Public Accounting and Finance", "Bachelor's Degree in Talent Development and Organizational Culture", "Bachelor's Degree in Entrepreneurship", "Bachelor's Degree in Business Strategy and Transformation", "Bachelor's Degree in Business Intelligence", "Bachelor's Degree in Marketing", "Bachelor's Degree in International Business"],
   "Health": ["Bachelor's Degree in Biosciences", "Bachelor's Degree in Nutrition and Holistic Wellness", "Bachelor's Degree in Clinical and Health Psychology", "Medical Surgeon", "Medical Surgeon Dentist"],
   "Creative Studies": ["Architecture", "Bachelor's Degree in Communication", "Bachelor of Design", "Bachelor's Degree in Hispanic Literature", "Bachelor's Degree in Music Technology and Production", "Bachelor's Degree in Digital Art", "Bachelor's Degree in Educational Innovation"],
-  "Built Environment": ["Architecture", "Civil Engineering", "Bachelor's Degree in Urban Planning"]
+  "Built Environment": ["Architecture", "Civil Engineering", "Bachelor's Degree in Urban Planning"],
   "Law, Economics and International Relations": ["Bachelor of Laws", "Bachelor's Degree in Economics", "Bachelor's Degree in Government and Public Transformation", "Bachelor's Degree in International Relations"],
   "Innovation and Transformation": ["Biomedical Engineering", "Civil Engineering", "Electronics Engineering", "Industrial and Systems Engineering", "Engineering in Innovation and Development", "Mechanical Engineering", "Mechatronics Engineering"],
   "Computing and Information Technologies": ["Robotics and Digital Systems Engineering", "Computer Engineering", "Engineering in Digital Business Transformation"],
@@ -113,7 +113,7 @@ while True:
                 print(f"Career: {career_name}")
                 print(f"Area: {info.get('Area', 'Unknown')}")
                 print(f"Semestres: {info.get('Semestres', 'N/A')}")
-                print(f"Descripcion: {info.get('Descripcion', 'No description available.')}")
+                print(f"Descripcion: {info.get('Descripcion', 'No description available.')}") 
             # after showing one career, allow selecting another or quitting
             continue
         else:
@@ -191,5 +191,3 @@ areas={
         "Ingenieria en Nanotecnologia"
          ],
     }
-
-print(areas["Negocios"])
