@@ -9,7 +9,7 @@ The order of files for the app to work are:
 # Reflection: 
 We have made a lot of progress for this phase, but some aspects still need to be improved, as we struggled a little with the pandas. Overall, we are happy with how the project is looking.
 
-Link for video: **YET TO BE RECORDED**
+Link for video: https://youtu.be/f1Z0rgKnhW8 
 
 # Specifications: 
 ⚠️**IMPORTANT:** You **MUST** download this excel file called "careers" in order to have the careers be displayed. The file **MUST** stay as an csv. and **MUST** be inside the second folder in the case that _**Visual Studio 2022**_ is being used. You can download the file from this link: https://drive.google.com/file/d/1TcFXXIT6NUKtGp-5dd3jN911U9qYXBPL/view?usp=sharing 
